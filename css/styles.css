@@ -50,7 +50,9 @@ img{
 * {box-sizing: border-box;
 }
 
-
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 
 
 .list {
@@ -327,7 +329,7 @@ font-family: Roboto, sans-serif;
         height: 100%;
         transform: translate(-50%, -50%) scale(1);
         position: absolute;
-        padding: 20px 0;
+        padding: 72px 24px 24px 24px;
         background: #FCFCFC;
         box-shadow: 0px 1px 1px rgb(0 0 0 / 14%),
                     0px 1px 3px rgb(0 0 0 / 12%),
@@ -1063,16 +1065,68 @@ button, input, optgroup, select, textarea {
 
 
 
+.column{
+    margin-left: 80px;
+}
 
 
+.footer-column{
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-maket);
+}
 
+.footer-list{
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+}
 
+.entry-field{
+    width: 264px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 8px 16px;
+}
 
+ .footer-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 165px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--color-maket);
+    background: var(--accent-color);
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+.footer-button:focus, .footer-button:hover {
+    background-color: var(--color-button-active);
+}
 
+.icon-send{
+    fill: #FFFFFF;
 
-
-
-
+}
 
 
 
