@@ -321,7 +321,7 @@ font-family: Roboto, sans-serif;
 
     .modal{
         max-width: 408px;
-        max-height: 576px;
+        max-height: 584px;
         background-color: #FCFCFC;
         top: 50%;
         left: 50%;
@@ -952,7 +952,6 @@ button, input, optgroup, select, textarea {
 .form-field{
     outline: 1px;
     position: relative;
-    margin-bottom: 8px;
 }
 
 
@@ -998,6 +997,7 @@ button, input, optgroup, select, textarea {
     resize: none;
     width: 360px;
     height: 120px;
+    display: block;
     padding: 8px 16px;
     margin-top: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1047,9 +1047,28 @@ button, input, optgroup, select, textarea {
  }
 
 .form-button{
-    margin: 24px 96px 0 96px;
+    
+         text-align: center;
+         font-size: 16px;
+         font-family: Roboto, sans-serif;
+         color: var(--text-white-color);
+         background-color: var(--accent-color);
+         border-radius: 4px;
+         padding: 16px 32px;
+         border: 1px solid transparent;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
+         line-height: 1.5;
+         letter-spacing: 0.04em;
+         cursor: pointer;
+         font-weight: 500;
+         transition:background-color var(--transition);
+         margin: 24px 96px 0 96px;
+         min-width: 169px;
 }
-
+ 
+.form-button:hover {
+    background-color: #404BBF;
+}
 
 
 .form-icons{
@@ -1126,6 +1145,9 @@ button, input, optgroup, select, textarea {
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
+
+
+
 .footer-button:focus, .footer-button:hover {
     background-color: var(--color-button-active);
 }
@@ -1147,15 +1169,21 @@ button, input, optgroup, select, textarea {
 }
 
 
+.form-input:hover, 
+.form-input:focus{
+    border-color: var(--accent-color);
+}
+ 
+
+   
+.form-input:focus + .form-svg, .form-input:hover + .form-svg {
+    fill: var(--accent-color);
+}
 
 
-
-
-
-
-
-
-
+.comment-textarea:focus, .comment-textarea:hover {
+    border-color:var(--accent-color);
+}
 
 
 
