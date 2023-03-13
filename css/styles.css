@@ -1023,15 +1023,19 @@ button, input, optgroup, select, textarea {
 
 .checkbox-input{
     appearance: none;
-    position: absolute;
 }
 
 .checkbox-icon{
+    top: 0;
+    left: -21px;
     position: absolute;
-    width: 1em;
-    height: 1em;
-    background-image: url(../images/checkbox.svg);
-    left: 0;
+    content: ' ';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2e2f42;
+    border-radius: 2px;
+    margin-right: 8px; 
 }
  .checkbox-labl{
     padding-left: 20px;
@@ -1189,7 +1193,7 @@ button, input, optgroup, select, textarea {
 
 
 .text-privacy {
-    margin-left: 24px;
+    
     font-weight: 400;
     font-size: 12px;
     line-height: 1.33;
@@ -1198,3 +1202,9 @@ button, input, optgroup, select, textarea {
 }
 
 
+.checkbox-input:checked + .checkbox-icon{
+    background-color: #404BBF;
+    background-image: url(../images/checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+} 
